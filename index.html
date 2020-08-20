@@ -4,34 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- displays site properly based on user's device -->
 
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
+    <script src="main.js"></script>
     <title>Olga | Rock, Paper, Scissors</title>
 
-    Score Rules You Picked The House Picked You Win You Lose Play Again
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-        .attribution {
-            font-size: 11px;
-            text-align: center;
-        }
-        
-        .attribution a {
-            color: hsl(228, 45%, 44%);
-        }
-    </style>
 </head>
 
 <body>
-
-
-
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
+    <header>
+        <div class="row">
+            <div class="col" style="align-self: center;">
+                <img src="images/logo.svg">
+            </div>
+            <div class="marcador">
+                <p id="score">SCORE</p>
+                <p id="puntos"></p>
+            </div>
+        </div>
+    </header>
+    <center>
+        <div class="inicio_juego">
+            <div class="row" style="align-content: center !important; margin-top:-2.7em !important;">
+                <div class="papel">
+                    <img src="images/icon-paper.svg" onclick="juego(1);">
+                </div>
+                <div class="tijera">
+                    <img src="images/icon-scissors.svg" onclick="juego(2);">
+                </div>
+            </div>
+            <div class="row" style="margin-left:5.9em !important; margin-top:1.8em !important">
+                <div class="piedra">
+                    <img src="images/icon-rock.svg" onclick="juego(0);">
+                </div>
+            </div>
+        </div>
+    </center>
+    <div class="row resultado">
+        <h2 id="persona"> </h2>
+        <h2 id="pc"> </h2>
+        <h2 id="resultado"> </h2>
     </div>
+
+
 </body>
 
 </html>

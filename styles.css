@@ -1,0 +1,86 @@
+body {
+    background-color: hsl(214, 47%, 23%)!important;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+header {
+    margin-left: 20em;
+    margin-right: 20em;
+    margin-top: 2em;
+    margin-bottom: 5em;
+    padding: 1em;
+    padding-left: 1.3em;
+    border: 2px solid #fff;
+    border-radius: 0.5em;
+}
+
+row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.marcador {
+    background-color: #fff;
+    width: 7em;
+    height: 6em;
+    align-self: center;
+    border-radius: 0.4em;
+    margin-right: 1em;
+}
+
+#puntos {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 1000;
+    font-size: 3em;
+    color: hsl(217, 16%, 45%);
+    padding-left: 0.94em;
+    margin-top: -0.2em;
+}
+
+#score {
+    text-align: center;
+    font-family: 'Barlow Semi Condensed', sans-serif !important;
+    font-weight: 100;
+    font-size: 0.85em;
+    color: hsl(229, 64%, 46%);
+    margin-top: 0.8em;
+    margin-bottom: 0em;
+}
+
+.inicio_juego {
+    background-image: url(images/bg-triangle.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    align-content: center !important;
+    width: 23em;
+    height: 23em;
+}
+
+.piedra {
+    border: 1.2em solid hsl(349, 71%, 52%);
+    background-color: #fff;
+    border-radius: 50%;
+    width: 10.5em;
+    height: 10.5em;
+    padding-top: 2.6em;
+}
+
+.papel {
+    border: 1.2em solid hsl(230, 89%, 62%);
+    background-color: #fff;
+    border-radius: 50%;
+    width: 10.5em;
+    height: 10.5em;
+    padding-top: 2.3em;
+    margin-left: 0em;
+}
+
+.tijera {
+    border: 1.2em solid hsl(39, 89%, 49%);
+    background-color: #fff;
+    border-radius: 50%;
+    width: 10.5em;
+    height: 10.5em;
+    padding-top: 2.3em;
+    margin-left: 3.6em;
+}
