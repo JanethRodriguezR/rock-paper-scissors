@@ -28,10 +28,10 @@
         </div>
     </header>
     <center>
-        <div class="inicio_juego">
+        <div id="inicio_juego" class="inicio_juego">
             <div class="row" style="align-content: center !important; margin-top:-2.7em !important;">
                 <div class="papel">
-                    <img src="images/icon-paper.svg" onclick="juego(1);">
+                    <img id="img1" src="images/icon-paper.svg" onclick="juego(1);">
                 </div>
                 <div class="tijera">
                     <img src="images/icon-scissors.svg" onclick="juego(2);">
@@ -44,12 +44,52 @@
             </div>
         </div>
     </center>
-    <div class="row resultado">
-        <h2 id="persona"> </h2>
-        <h2 id="pc"> </h2>
-        <h2 id="resultado"> </h2>
+
+
+
+    <div id="resultado" class="row resultado" style="display: none;">
+        <div class="col" id="col_u" style="text-align: center; align-self: center; position: initial;padding: 5em;margin-top: 3em;">
+            <p class="tu_y_pc">YOU PICKED</p>
+            <div id="you_picked" style="display: inline-block;margin-bottom: 3em;"></div>
+        </div>
+        <div class="col" style="text-align: center; align-self: center; position: absolute;top: 19em;left: 0em;">
+            <p id="msj_resultado" style="font-family: 'Barlow Semi Condensed', sans-serif !important;font-size: 3em;"></p>
+            <button id="btn" type="button" class="btn btn-light" style="font-family: 'Barlow Semi Condensed', sans-serif !important; font-size: 0.8em; width: 15em; border-radius: 0.7em !important;">
+                PLAY AGAIN
+            </button>
+        </div>
+        <div class="col" id="col_pc" style="text-align: center; align-self: center; position: initial;padding: 5em; margin-top: 3em;">
+            <p class="tu_y_pc">THE HOUSE PICKED</p>
+            <div id="pc_picked" style="display: inline-block;margin-bottom: 3em;"></div>
+        </div>
     </div>
 
+
+    <div id="resultado_parcial" class="row" style="display: none;">
+        <div class="col" style="text-align: center;align-self: center; padding: 5em;">
+            <p class="tu_y_pc" style="margin-right: 2em;">YOU PICKED</p>
+            <div id="you_picked1"></div>
+        </div>
+        <div class="col" style="text-align: center;align-self: center;padding: 5em;">
+            <p class="tu_y_pc" style="margin-right: 2em;">THE HOUSE PICKED</p>
+            <div id="pc_picked1">
+                <div id="nada"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div style="display: none;">
+        <div id="papel">
+            <img src="images/icon-paper.svg">
+        </div>
+        <div id="tijera">
+            <img src="images/icon-scissors.svg">
+        </div>
+        <div id="piedra">
+            <img src="images/icon-rock.svg">
+        </div>
+    </div>
 
 </body>
 
